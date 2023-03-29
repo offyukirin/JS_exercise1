@@ -1,22 +1,10 @@
-let hello = 'Hello World';
-alert(hello);
+let max = 100;
+let num = 1;
+let count = 0;
 
-// 整数を代入する
-let int1 = 1;
+while(num < max){
+  num = num * 2;
+  count = count + 1;
+}
 
-// 負数を代入する
-let int2 = -10;
-
-// 小数点を代入する
-let float1 = 3.14;
-
-// 文字列を代入する
-let str1 = 'JavaScriptを覚えよう';
-
-//文字列の結合は+ 記号を用いる
-alert('Hello' + 'World');
-
-//結合の応用
-let str2 = 'Hello';
-let str3 = 'World!!';
-alert(str1 + str2);
+alert('2を掛け続けて' + max + 'を超えるのに必要だった回数は' + count + '回です');
